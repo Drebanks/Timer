@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  
+}
+.load{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner{
+  background: transparent;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border: 3px solid black;
+  border-top-color: red;
+  animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate (360deg);
+  }
+}
+.container h1{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+  color:crimson;
+}
+.container h1:hover{
+  color:darkblue;
+}
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+.timer p{
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  width:100px;
+  box-shadow: 0 5px 5px rgb(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+.timer article{
+   margin: 10px;
+}
+.timer h3{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.timer h3:hover{
+  color:aquamarine;
+}
+.timer p:hover{
+  color: red;
+}
+.timer article:hover{
+  color:blue;
+}

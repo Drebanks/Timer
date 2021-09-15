@@ -19,7 +19,7 @@ const App = () => {
     const days = hours * 24
 
     let timeDays = Math.floor (timedifference / days)
-    let timeHours = Math.floor (( timedifference % days) / minutes)
+    let timeHours = Math.floor (( timedifference % days) / hours)
     let timeMinutes = Math.floor ((timedifference % hours)/minutes)
     let timeSeconds = Math.floor ((timedifference % minutes)/seconds)
 

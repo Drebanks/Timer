@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -10,8 +11,10 @@
   justify-content: center;
   min-height: 100vh;
   padding: 0 20px;
+  /* background-color: black; */
   
 }
+
 .load{
   position: absolute;
   left: 50%;
@@ -25,7 +28,7 @@
   width: 80px;
   border: 3px solid black;
   border-top-color: red;
-  animation: spin 0.5s linear infinite;
+  animation: spin 0.3s linear infinite;
 }
 @keyframes spin {
   to {
